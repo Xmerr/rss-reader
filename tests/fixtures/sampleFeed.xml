@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sample RSS Feed</title>
+    <link>https://example.com</link>
+    <description>A sample RSS feed for testing</description>
+    <language>en-us</language>
+    <item>
+      <title>Sample Item 1</title>
+      <link>https://example.com/?p=12345</link>
+      <pubDate>Mon, 01 Jan 2024 12:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://example.com/?p=12345</guid>
+      <description>This is the description for item 1.</description>
+      <content:encoded><![CDATA[
+        <p>This is the full content for item 1.</p>
+        <p>Download links:</p>
+        <a href="https://example.com/download1.zip">Download 1</a>
+        <a href="https://example.com/download2.zip">Download 2</a>
+      ]]></content:encoded>
+    </item>
+    <item>
+      <title>Sample Item 2</title>
+      <link>https://example.com/?p=12346</link>
+      <pubDate>Tue, 02 Jan 2024 12:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://example.com/?p=12346</guid>
+      <description>This is the description for item 2.</description>
+      <content:encoded><![CDATA[
+        <p>This is the full content for item 2.</p>
+        <p>Magnet link:</p>
+        <a href="magnet:?xt=urn:btih:1234567890abcdef1234567890abcdef12345678">Magnet Link</a>
+      ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

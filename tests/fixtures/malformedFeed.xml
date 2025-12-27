@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Malformed RSS Feed</title>
+    <link>https://example.com</link>
+    <description>This feed has various structural issues</description>
+
+    <!-- Item with missing required fields -->
+    <item>
+      <title>Item with Missing Link</title>
+      <!-- No link element -->
+      <pubDate>Mon, 01 Jan 2024 12:00:00 +0000</pubDate>
+    </item>
+
+    <!-- Item with missing pubDate -->
+    <item>
+      <title>Item with Missing Date</title>
+      <link>https://example.com/item2</link>
+      <!-- No pubDate element -->
+    </item>
+
+    <!-- Item with invalid date format -->
+    <item>
+      <title>Item with Invalid Date</title>
+      <link>https://example.com/item3</link>
+      <pubDate>This is not a valid date</pubDate>
+    </item>
+
+    <!-- Item with empty title -->
+    <item>
+      <title></title>
+      <link>https://example.com/item4</link>
+      <pubDate>Mon, 01 Jan 2024 12:00:00 +0000</pubDate>
+    </item>
+
+    <!-- Unclosed item tag -->
+    <item>
+      <title>Unclosed Item</title>
+      <link>https://example.com/item5</link>
+      <pubDate>Mon, 01 Jan 2024 12:00:00 +0000</pubDate>
+    <!-- Missing </item> -->
+
+  </channel>
+</rss>

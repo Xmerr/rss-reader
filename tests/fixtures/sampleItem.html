@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sample RSS Item Content</title>
+</head>
+<body>
+  <div class="content">
+    <h1>Sample Article</h1>
+    <p>This is a sample article with various types of links for testing purposes.</p>
+
+    <h2>HTTP Links</h2>
+    <p>Regular web links:</p>
+    <ul>
+      <li><a href="http://example.com/page1">HTTP Link</a></li>
+      <li><a href="https://example.com/page2">HTTPS Link</a></li>
+      <li><a href="https://www.github.com/project">GitHub Project</a></li>
+    </ul>
+
+    <h2>Download Links</h2>
+    <p>Direct download links:</p>
+    <a href="https://example.com/downloads/file1.zip">Download File 1</a>
+    <a href="https://example.com/downloads/file2.pdf">Download File 2</a>
+
+    <h2>Magnet Links</h2>
+    <p>BitTorrent magnet links:</p>
+    <a href="magnet:?xt=urn:btih:1234567890abcdef1234567890abcdef12345678&dn=Sample.File&tr=udp://tracker.example.com:1337/announce">Magnet Link 1</a>
+    <a href="magnet:?xt=urn:btih:abcdefabcdefabcdefabcdefabcdefabcdefabcd&dn=Another.File">Magnet Link 2</a>
+
+    <h2>Other Protocol Links</h2>
+    <p>Various other protocols:</p>
+    <a href="ftp://ftp.example.com/files">FTP Link</a>
+    <a href="mailto:test@example.com">Email Link</a>
+    <a href="tel:+1234567890">Phone Link</a>
+
+    <h2>Relative Links</h2>
+    <p>Relative URLs:</p>
+    <a href="/relative/path">Relative Link 1</a>
+    <a href="../parent/path">Relative Link 2</a>
+    <a href="#anchor">Anchor Link</a>
+
+    <h2>Edge Cases</h2>
+    <p>Testing edge cases:</p>
+    <a href="  https://example.com/whitespace  ">Link with whitespace</a>
+    <a href="">Empty href attribute</a>
+    <a>Anchor without href</a>
+    <a href="javascript:void(0)">JavaScript link</a>
+
+    <h2>Duplicate Links</h2>
+    <p>These links appear multiple times:</p>
+    <a href="https://example.com/duplicate">Duplicate 1</a>
+    <a href="https://example.com/duplicate">Duplicate 2</a>
+    <a href="https://example.com/duplicate">Duplicate 3</a>
+  </div>
+</body>
+</html>
