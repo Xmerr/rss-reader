@@ -46,7 +46,10 @@ jobs:
         run: npm ci
 
       - name: Run tests and build
-        run: npm run prepublishOnly
+        run: |
+          npm run clean
+          npm run build
+          npm run test:ci
 
       - name: Publish to npm
         run: npm publish --access public
